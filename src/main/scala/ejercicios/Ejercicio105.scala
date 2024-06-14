@@ -24,7 +24,7 @@ object Ejercicio105 extends App {
 
   // Imprimir los números en orden inverso
   println("Los números ingresados en orden inverso son:")
-  for (i <- numeros.reverse) { //Aplicamos el metodo inverse para ordenar los elementos de forma inversa.
+  for (i <- numeros.reverse) { //Aplicamos el metodo reverse para ordenar los elementos de forma inversa.
     print(s"$i, ")
   }
 }

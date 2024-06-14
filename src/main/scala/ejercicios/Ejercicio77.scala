@@ -31,13 +31,17 @@ object Ejercicio77 {
   def esBinario(numero: String): Boolean = {
     numero.forall(digito => digito == '0' || digito == '1')
     /*for all es un método de colecciones que se utiliza para verificar si todos los elementos de una coleccion
-    * cumplen con ciertas condiciones especificadas.*/
+    * cumplen con las condiciones especificadas.*/
     /*Utilizamos una funcion lambda/función anonima en la condicion */
   }
 
   // Función para convertir un número binario a decimal
   def convertirBinarioADecimal(numeroBinario: String): Int = {
     // Usamos foldLeft para acumular el resultado
-    numeroBinario.foldLeft(0)((acumulador, digito) => acumulador * 2 + digito.asDigit)
+    numeroBinario.foldLeft(0)((acumulador, digito) => acumulador * 2 + digito.asDigit) //asDigit convierte un char(solo numerico) en un Int
+    /*el metodo foldleft permite iterar sobre una coleccion y acumular un resultado utilizando una operacion binaria
+    * el cero representa el valor inicial del acumulador y la segunda parte define como combinar cada elemento de la coleccion
+    * con el acumulador*/
+
   }
 }
