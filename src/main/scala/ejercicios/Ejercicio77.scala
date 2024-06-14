@@ -27,9 +27,12 @@ object Ejercicio77 {
     println(s"El número decimal equivalente de $numeroBinario (base 2) es: $numeroDecimal")
   }
 
-  // Función para verificar si una cadena es un número binario válido
+  // Función para verificar si el parametro string es un número binario válido
   def esBinario(numero: String): Boolean = {
     numero.forall(digito => digito == '0' || digito == '1')
+    /*for all es un método de colecciones que se utiliza para verificar si todos los elementos de una coleccion
+    * cumplen con ciertas condiciones especificadas.*/
+    /*Utilizamos una funcion lambda/función anonima en la condicion */
   }
 
   // Función para convertir un número binario a decimal
